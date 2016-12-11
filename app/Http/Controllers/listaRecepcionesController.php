@@ -61,7 +61,11 @@ class listaRecepcionesController extends BaseController
         $auxprod->save();
 
 
-    	return "recepciones";
+    	echo '<script language="javascript">';
+        echo 'alert("Pedido recepcionado")';
+        echo '</script>';
+
+        return view('indexE',['id'=>1]);
     }
 
 

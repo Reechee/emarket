@@ -1,5 +1,5 @@
 <div class="navbar nav_title" style="border: 0;">
-              <a class="site_title"><i class="fa fa-paw"></i> <span>Markqet</span></a>
+              <a  class="site_title"><i class="fa fa-paw"></i> <span>Markqet</span></a>
             </div>
 
 <div class="clearfix"></div>
@@ -15,12 +15,7 @@
                       
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-edit"></i> Aprobar Ordenes<span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                      <li><a href="pendientes">Pendientes</a></li>
-                      <li><a href="finales">Finalizadas</a></li>
-                    </ul>
-                  </li>
+                  
                </ul>
               </div>
             </div>

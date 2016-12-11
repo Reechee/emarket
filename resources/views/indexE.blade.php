@@ -35,7 +35,16 @@
           <div class="left_col scroll-view">
 
             <!-- sidebar menu -->
-            <?php echo view('menu'); ?>
+
+            <?php 
+            if ((int)$id==0 ) {
+              echo view('menu0'); 
+            }
+            if((int)$id==1){
+              echo view('menu1'); 
+            }
+            
+            ?>
             <!-- /sidebar menu -->
 
           </div>

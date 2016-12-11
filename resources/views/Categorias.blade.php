@@ -27,7 +27,7 @@
           <div class="left_col scroll-view">
             
 
-            <?php echo view('menu'); ?>
+            <?php echo view('menu1'); ?>
 
           </div>
         </div>

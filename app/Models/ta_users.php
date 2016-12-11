@@ -18,6 +18,7 @@ class ta_users extends Model
     protected $fillable = [
     	'usr_logid',
     	'usr_nombre',
+        'usr_correo',
     	'usr_tipo',
     	'usr_estado'
     ];

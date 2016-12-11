@@ -28,8 +28,8 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/','loginController@index');
-Route::get('enc','encargadoController@index');
+
+//Route::get('enc','encargadoController@index');
 Route::get('solicitudes','solicitudController@index');
 Route::get('finales','listaFinalizadosController@index');
 
@@ -37,8 +37,9 @@ Route::get('index{nombre}',
         ['as'=> 'index', 'uses'=>'listaCatController@index']
 );
 
-
+Route::resource('login','loginController');
 Route::resource('productos','listaCatController');
 Route::resource('recepciones','listaRecepcionesController');
 Route::resource('pendientes','listaPendientesController');
+Route::resource('olvido','olvidoController');
 

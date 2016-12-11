@@ -34,7 +34,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
 
-            <?php echo view('menu'); ?>
+            <?php echo view('menu0'); ?>
          
           </div>
         </div>

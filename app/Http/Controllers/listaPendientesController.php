@@ -41,8 +41,13 @@ class listaPendientesController extends BaseController
         $aux->rq_estado = 1;
         $aux->save(); 
         
-    	return "actualizado";
+    	echo '<script language="javascript">';
+        echo 'alert("Pedido aceptado")';
+        echo '</script>';
+
+        return view('indexE',['id'=>0]);
     }
+
 
     
 

@@ -71,7 +71,11 @@ class listaCatController extends BaseController
 
             ]);
 
-    	return "listo";
+    	echo '<script language="javascript">';
+        echo 'alert("Pedido guardado por aprobar")';
+        echo '</script>';
+
+        return view('indexE',['id'=>1]);
     }
 
 

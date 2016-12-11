@@ -34,22 +34,27 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-              <h1>Login</h1>
+              <h1>Restablecer password</h1>
               <div>
-                {!!Form::open(['route'=>'login.store','method'=>'POST'])!!}
+                {!!Form::open(['route'=>'olvido.store','method'=>'POST'])!!}
                     <div class="form-group">
                       {!!Form::text('user',null,['class'=>'form-control','placeholder'=>'Usuario'])!!}
                     </div>
                     <div class="form-group">
-                      {!!Form::text('pass',null,['class'=>'form-control','placeholder'=>'password'])!!}
+                      {!!Form::text('mail',null,['class'=>'form-control','placeholder'=>'Correo'])!!}
                     </div>
-                    {!!Form::submit('Ingresar',['class'=>'btn btn-primary'])!!}
+                    <div class="form-group">
+                      {!!Form::text('pass',null,['class'=>'form-control','placeholder'=>'Nuevo password'])!!}
+                    </div>
+                    <div class="form-group">
+                      {!!Form::text('passve',null,['class'=>'form-control','placeholder'=>'Repita el nuevo password'])!!}
+                    </div>
+                    {!!Form::submit('Actualizar',['class'=>'btn btn-primary'])!!}
 
                   {!!Form::close()!!}
               </div>
               <div >
-                <!--si doy clic aqui me deberia llevar a una pagina igual a esta de otro controlador de registros-->
-                <a class="centered" href="olvido">Olvid&oacute; contrase&ntilde;a?</a>
+
               </div>
 
               <div class="clearfix"></div>
