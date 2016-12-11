@@ -49,7 +49,7 @@
                     <div class="form-group">
                       {!!Form::text('passve',null,['class'=>'form-control','placeholder'=>'Repita el nuevo password'])!!}
                     </div>
-                    {!!Form::submit('Actualizar',['class'=>'btn btn-primary'])!!}
+                    {!!Form::submit('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actualizar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',['class'=>'btn btn-primary'])!!}
 
                   {!!Form::close()!!}
               </div>
