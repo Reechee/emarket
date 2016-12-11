@@ -59,7 +59,7 @@
 
                 
                 <p class="change_link">Nuevo aqui?
-                  <a href="" class="to_register"> Crea una cuenta </a>
+                  <a href="nuevousuario" class="to_register"> Crea una cuenta </a>
                 </p>
                 
 

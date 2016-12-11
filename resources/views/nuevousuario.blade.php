@@ -34,14 +34,20 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-              <h1>Restablecer password</h1>
+              <h1>Crear usuario</h1>
               <div>
-                {!!Form::open(['route'=>'olvido.store','method'=>'POST'])!!}
+                {!!Form::open(['route'=>'nuevousuario.store','method'=>'POST'])!!}
                     <div class="form-group">
-                      {!!Form::text('user',null,['class'=>'form-control','placeholder'=>'Usuario'])!!}
+                      {!!Form::text('user',null,['class'=>'form-control','placeholder'=>'Nombre de usuario'])!!}
+                    </div>
+                    <div class="form-group">
+                      {!!Form::text('name',null,['class'=>'form-control','placeholder'=>'Nombre Completo'])!!}
                     </div>
                     <div class="form-group">
                       {!!Form::text('mail',null,['class'=>'form-control','placeholder'=>'Correo'])!!}
+                    </div>
+                    <div class="form-group">
+                      {!!Form::text('type',null,['class'=>'form-control','placeholder'=>'Ingrese 0 para gerente o 1 para trabajador'])!!}
                     </div>
                     <div class="form-group">
                       {!!Form::text('pass',null,['class'=>'form-control','placeholder'=>'Nuevo password'])!!}
@@ -49,7 +55,7 @@
                     <div class="form-group">
                       {!!Form::text('passve',null,['class'=>'form-control','placeholder'=>'Repita el nuevo password'])!!}
                     </div>
-                    {!!Form::submit('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actualizar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',['class'=>'btn btn-primary'])!!}
+                    {!!Form::submit('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crear Cuenta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',['class'=>'btn btn-primary'])!!}
 
                   {!!Form::close()!!}
               </div>
@@ -63,8 +69,8 @@
                   
 
                 
-                <p class="change_link">Nuevo aqui?
-                  <a href="nuevousuario" class="to_register"> Crea una cuenta </a>
+                <p class="change_link">Ya es usuario?
+                  <a href="login" class="to_register"> Ingrese </a>
                 </p>
                 
 

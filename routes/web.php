@@ -38,6 +38,7 @@ Route::get('index{nombre}',
 );
 
 Route::resource('login','loginController');
+Route::resource('nuevousuario','nuevousuarioController');
 Route::resource('productos','listaCatController');
 Route::resource('recepciones','listaRecepcionesController');
 Route::resource('pendientes','listaPendientesController');
