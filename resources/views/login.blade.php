@@ -43,13 +43,13 @@
                     <div class="form-group">
                       {!!Form::text('pass',null,['class'=>'form-control','placeholder'=>'password'])!!}
                     </div>
-                    {!!Form::submit('Ingresar',['class'=>'btn btn-primary'])!!}
+                    {!!Form::submit('&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ingresar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',['class'=>'btn btn-primary'])!!}
 
                   {!!Form::close()!!}
               </div>
               <div >
                 <!--si doy clic aqui me deberia llevar a una pagina igual a esta de otro controlador de registros-->
-                <a class="centered" href="olvido">Olvid&oacute; contrase&ntilde;a?</a>
+                <a class="right" href="olvido">Olvid&oacute; contrase&ntilde;a?</a>
               </div>
 
               <div class="clearfix"></div>
@@ -57,11 +57,11 @@
               <div class="separator">
                   
 
-                <!--CREAR CUENTA
+                
                 <p class="change_link">Nuevo aqui?
                   <a href="" class="to_register"> Crea una cuenta </a>
                 </p>
-                -->
+                
 
                 <div class="clearfix"></div>
                 <br />
