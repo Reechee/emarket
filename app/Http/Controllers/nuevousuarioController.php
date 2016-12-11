@@ -22,6 +22,7 @@ class nuevousuarioController extends BaseController
         $dblogin = ta_login::all();
 
         $userid;
+        $logid;
 
         foreach ($dblogin as $value) {
             if(strcmp($value['log_usuario'], $request['user'])==0){
@@ -32,9 +33,54 @@ class nuevousuarioController extends BaseController
                 return view('nuevousuario');
 
             }
+        }
+        
+        if ((int)$request['type']==1 || (int)$request['type']==0) {
+            if(strcmp($request['pass'], $request['passve'])==0){
+                //agrega en la tabla login
+                ta_login::create([
+                    'log_usuario'=>$request['user'],
+                    'log_psw'=>$request['pass'],
+                    ]);
 
+                //agrega en la tabla usuarios
+                $dblogin = ta_login::all();
+                foreach ($dblogin as $value2) {
+                    if(strcmp($value2['log_usuario'], $request['user'])==0){
+                        $logid=$value2['log_id'];
+                        ta_users::create([
+                            'usr_logid'=>(int)$logid,
+                            'usr_nombre'=>$request['user'],
+                            'usr_correo'=>$request['mail'],
+                            'usr_tipo'=>(int)$request['type'],
+                            'usr_estado'=>0,
+                            ]);
+
+                        //se creo el usuario
+                        echo '<script language="javascript">';
+                        echo 'alert("Usuario registrado")';
+                        echo '</script>';
+                        return view('login');
+                    }
+                    
+                }
+
+            }
+            //password no coincide
+            echo '<script language="javascript">';
+            echo 'alert("el password no coincide")';
+            echo '</script>';
+            return view('nuevousuario'); 
 
         }
+        //no existe el tipo
+        echo '<script language="javascript">';
+        echo 'alert("elija un tipo valido")';
+        echo '</script>';
+        return view('nuevousuario'); 
+
+
+        
 
     	
     }

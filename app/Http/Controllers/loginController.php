@@ -20,7 +20,7 @@ class loginController extends BaseController
     	//verificar usuario y contraseña pas
     	//return "login store";
     	$dbusers = ta_login::all();
-
+        $id=0;
     	foreach ($dbusers as $value) {
     		if (strcmp($value['log_usuario'], $request['user'])==0) {
     			if(strcmp($value['log_psw'], $request['pass'])==0){
